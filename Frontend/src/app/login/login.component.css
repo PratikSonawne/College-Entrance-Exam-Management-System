@@ -1,0 +1,88 @@
+/* Style for the section */
+.section {
+    margin: 20px;
+  }
+  
+  /* Style for the container div */
+  .LSDiv {
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 10px;
+  }
+  
+  /* Style for the headings */
+  h1, h2 {
+    margin: 0;
+    padding: 0;
+  }
+  
+  h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  
+  /* Style for the input div */
+  .LSDivInpDiv {
+    margin-bottom: 15px;
+  }
+  
+  /* Style for the input elements */
+  input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  /* Style for the button */
+  .btn {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  /* Style for the demo login text */
+  .LSBtsDiv {
+    margin-top: 15px;
+  }
+  
+  /* Additional styling */
+  span {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+/* Style for the container div */
+.LSDiv {
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center; /* Center-align the content */
+  }
+/* Style for the input div */
+.LSDivInpDiv {
+    margin-bottom: 15px;
+    text-align: center; /* Center-align the content */
+  }
+  
+  /* Style for the input elements */
+  input {
+    width: 60%; /* Adjust the width as needed */
+    margin: 0 auto; /* Center-align the input horizontally */
+    display: block; /* Ensure input fields appear on their own line */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+      

@@ -1,0 +1,20 @@
+
+<table border="1">
+    <tr>
+        <th>SN</th>
+        <th>Questions</th>
+        <th>Answer</th>
+        <th>Action</th>
+    </tr>
+    <tr *ngFor="let log of logs; let i=index">
+        <td>{{i+1}}</td>
+        <td>{{log.questionBank.questionname}}</td>
+        <td>
+            {{log.answer}}
+        </td>
+        <td>
+            <button (click)="acceptreject(log,1)">Accept</button>
+            <button (click)="acceptreject(log,-1)">Reject</button>
+        </td>
+    </tr>
+</table>

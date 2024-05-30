@@ -1,0 +1,14 @@
+Welcome Exam coordinator<br><br>
+<button [disabled]="whatToShow==1" (click)="changeWhatToShow(1)" >TestMgmt</button><br><br>
+<button [disabled]="whatToShow==2" (click)="changeWhatToShow(2)" >QuestionMgmt</button><br><br>
+<button [disabled]="whatToShow==3" (click)="changeWhatToShow(3)" >AnswerVerification</button><br><br>
+
+<div *ngIf="whatToShow==1">
+    <app-testmgmt></app-testmgmt>
+</div>
+<div *ngIf="whatToShow==2">
+    <app-questionmgmt></app-questionmgmt>
+</div>
+<div *ngIf="whatToShow==3">
+    <app-answerverification></app-answerverification>
+</div>

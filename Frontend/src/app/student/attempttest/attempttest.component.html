@@ -1,0 +1,38 @@
+<button (click)="this.app.isLoggedIn=0">Logout</button> <br><br>
+<table border="1">
+    <tr>
+        <td>
+            <table border="2">
+                <tr>
+                    <td>SN</td>
+                    <td>Question</td>
+                    <td>Action</td>
+                </tr>
+                <tr *ngFor="let log of student.logs; let i=index">
+                    <td>{{i+1}}</td>
+                    <td>{{log.questionBank.questionname}}</td>
+                    <td>
+                        <div *ngIf="log.submit==0">
+                            <button (click)="load(i)">Load</button>
+                        </div>
+                        <div *ngIf="log.submit==1">
+                            Submitted
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </td>
+        <td align="top">Write Answer
+            <div *ngIf="showIndex<0">
+                QuestionNotSelected
+            </div>
+            <div *ngIf="showIndex>=0">
+                Question:{{student.logs[showIndex].questionBank.questionname}}<br>
+                Answer:<br>
+                <textarea cols="50" rows="10" [(ngModel)]="student.logs[showIndex].answer"></textarea>
+                <button (click)="update()">Update</button>
+                <button (click)="submit()">Submit</button>
+            </div>
+        </td>
+    </tr>
+</table>

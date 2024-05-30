@@ -1,0 +1,62 @@
+/* General styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+}
+
+/* Table styles */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+th, td {
+  padding: 10px;
+  text-align: left;
+  border: 1px solid #ddd;
+}
+
+th {
+  background-color: #f2f2f2;
+  font-weight: bold;
+}
+
+/* Textarea styles */
+textarea {
+  width: 100%; /* Take up full width of the container */
+  max-width: 100%; /* Ensure the textarea doesn't overflow its container */
+  padding: 10px;
+  margin: 5px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-size: 14px;
+}
+
+/* Button styles */
+button {
+  padding: 8px 12px;
+  margin: 5px;
+  cursor: pointer;
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  th, td {
+      font-size: 12px; /* Reduce font size for smaller screens */
+  }
+  
+  button {
+      padding: 6px 10px; /* Adjust button padding for smaller screens */
+  }
+}

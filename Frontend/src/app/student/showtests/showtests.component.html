@@ -1,0 +1,23 @@
+<button (click)="this.app.isLoggedIn=0">Logout</button> <br><br>
+<table border="1">
+    <tr>
+        <th>SN</th>
+        <th>Name</th>
+        <th>Start</th>
+        <th>End</th>
+        <th>QuestionCount</th>
+        <th>PassingCount</th>
+        <th>Attempt</th>
+    </tr>
+    <tr *ngFor="let obj of tests; let i=index">
+        <td>{{i+1}}</td>
+        <td>{{obj.name}}</td>
+        <td>{{obj.start | date}}</td>
+        <td>{{obj.end | date}}</td>
+        <td>{{obj.questioncount}}</td>
+        <td>{{obj.passingcount}}</td>
+        <td>
+            <button (click)="attempt(obj.id)">Attempt</button>
+        </td>
+    </tr>
+</table>

@@ -1,0 +1,54 @@
+
+<br>
+    <br>
+
+<button (click)="load()">Load</button>
+<br>
+    <br>
+<table border="1" *ngIf="wts==2">
+    <tr>
+        <th>SN</th> 
+        <th>Name</th>
+        <th>Start</th>
+        <th>End</th>
+        <th>QuestionCount</th>
+        <th>PassingCount</th>
+        <th>Result</th>
+        <th>Action</th>
+        
+    </tr>
+    <tr *ngFor="let obj of tests; let i=index">
+        <td>{{i+1}}</td>
+        <td>{{obj.name}}</td>
+        <td>{{obj.start}}</td>
+        <td>{{obj.end}}</td>
+        <td>{{obj.questioncount}}</td>
+        <td>{{obj.passingcount}}</td>
+        <td>{{obj.result}}</td>
+        <!-- <td>{{obj.id}}</td>  -->
+        <td><button (click)="deleteTest(obj.id)">Delete</button></td>
+        
+    </tr>
+</table>
+<div class="addtest">
+Add New test
+<br>
+<br>
+    <br>
+Name:<input type="text" [(ngModel)]="name"><br>
+<br>
+    <br>
+Start:<input type="datetime-local" [(ngModel)]="start"><br>
+<br>
+    <br>
+End:<input type="datetime-local" [(ngModel)]="end"><br>
+<br>
+    <br>
+QuestionCount:<input type="number" [(ngModel)]="questioncount"><br>
+<br>
+    <br>
+PassingCount:<input type="number" [(ngModel)]="passingcount"><br>
+<br>
+    
+<button (click)="add()">AddTest</button>
+</div>
